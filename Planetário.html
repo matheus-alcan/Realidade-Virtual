@@ -1,0 +1,86 @@
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+
+<a-scene >
+    <a-assets>
+    <img id="galaxy" src="ihttps://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/galaxy.jpg">
+    <img id="moon" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/moon_1024.jpg">
+      <img id="clouds" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_clouds_2048.png">
+      <img id="venus" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/5710820393_a36f3c730b_m.jpg">
+  </a-assets>
+  <a-entity layout="type: circle; margin: 20" position="0 2 -5" radius=40>
+         <a-animation        attribute="rotation"
+       dur="5000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  <a-sphere  src="" position="0 0 0" radius="1" color="#9C2A3C" material="src: #clouds">
+         <a-animation        attribute="rotation"
+       dur="10000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+  <a-sphere src="" position="3 2 1" radius=".5" color="#5EFDE1"  material="src: #moon">
+         <a-animation        attribute="rotation"
+       dur="7000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+  <a-sphere color="#F8D05B" material="src: #moon" position="2 -2 0" radius=".5">
+    <a-animation        attribute="rotation"
+       dur="2000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+  <a-sphere src="" position="-7 0 -4" radius="1.25" color="#1C7891"  material="src: #moon">
+     <a-animation        attribute="rotation"
+       dur="5000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+     <a-sphere position="-2 0 -1" radius=".2" color="#5C7294"  material="src: #moon">
+     <a-animation        attribute="rotation"
+       dur="4000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+    <a-sphere src="" position="-4 3 1" radius=".1" color="#A599B5"  material="src: #moon">
+         <a-animation        attribute="rotation"
+       dur="1000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+        <a-sphere src="" position="-2 1 -5" radius=".1" color="#E5446D"  material="src:#clouds">
+         <a-animation        attribute="rotation"
+       dur="1000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+            <a-sphere src="" position="-2 -5 5" radius=".1" color="#E5446D"  material="src:#clouds">
+         <a-animation        attribute="rotation"
+       dur="1000"
+        to="0 360 0"
+    repeat="indefinite"
+     easing="linear">
+       </a-animation>
+  </a-sphere>
+ </a-entity>
+
+  <a-sky src="https://cdn.eso.org/images/screen/eso1025a.jpg" rotation="0 -90 0"></a-sky>
+<a-light intensity="3" color="#FFF" position="-1 1 0"></a-light>
+</a-scene>
+<script src="var.js"></script>
